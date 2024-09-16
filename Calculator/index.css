@@ -31,28 +31,72 @@ main {
 }
 
 .calculator {
-    height: 400px;
-    width: 280px;
-    border: 1px solid black;
-    border-radius: 12px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 540px;
+    width: 400px;
+    color: #fff;
+    font-size: 20px;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.actions {
+    flex: 1.2;
+    background-color: rgb(44, 44, 44);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
 }
 
 .result {
-    flex: 2;
+    display: flex;
+    flex-direction: column-reverse;
+    flex: 3;
     background-color: aqua;
-    border: 1px solid black;
+    border-top: 1px solid black;
+    background-color: rgb(57 57 57);
+    padding: 10px;
+
+    span {
+        padding: 4px;
+    }
 }
 
 .value {
-    flex: 1;
+    flex: 2;
     background-color: aqua;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: rgb(57 57 57);
+    padding: 10px;
 }
 
 .buttons {
-    flex: 4;
-    background-color: aqua;
+    flex: 5;
+    background-color: rgb(77 77 77);
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+
+    .grid_buttons {
+        padding: 10px;
+
+        justify-content: space-evenly;
+
+        display: grid;
+        grid-template-areas:
+            "a b c d e"
+            "f g h i j"
+            "k l m n o"
+            "p q r s t"
+            "u v w x t";
+
+        .btn {
+            min-height: 40px;
+            width: 70px;
+        }
+    }
 }
 
 footer {

@@ -1,23 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
     <script src="index.js"></script>
-    <link rel="stylesheet" type="text/css" href="index.css">
-</head>
-<body>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body>
     <div class="container">
-        <header>HEADER</header>
-        <main>
-            <div class="calculator">
-                <div class="result"></div>
-                <div class="value"></div>
-                <div class="buttons"></div>
+      <header>HEADER</header>
+      <main>
+        <div class="calculator">
+          <div class="actions">
+            <button class="undo">Desfazer</button>
+            <span>Irwyng's Calculator</span>
+            <button class="tooltip_info">Info</button>
+          </div>
+          <div class="result">
+            <span>Aqui vão o historico dos resultados</span>
+          </div>
+          <div class="value">0</div>
+          <div class="buttons">
+            <div class="grid_buttons">
+              <button class="btn" style="grid-area: a">ER</button>
+              <button class="btn" style="grid-area: b">(</button>
+              <button class="btn" style="grid-area: c">)</button>
+              <button class="btn" style="grid-area: d">mod</button>
+              <button class="btn" style="grid-area: e">PI</button>
+              <button class="btn" style="grid-area: f">7</button>
+              <button class="btn" style="grid-area: g">8</button>
+              <button class="btn" style="grid-area: h">9</button>
+              <button class="btn" style="grid-area: i">/</button>
+              <button class="btn" style="grid-area: j">RQ</button>
+              <button class="btn" style="grid-area: k">4</button>
+              <button class="btn" style="grid-area: l">5</button>
+              <button class="btn" style="grid-area: m">6</button>
+              <button class="btn" style="grid-area: n">*</button>
+              <button class="btn" style="grid-area: o">QD</button>
+              <button class="btn" style="grid-area: p">1</button>
+              <button class="btn" style="grid-area: q">2</button>
+              <button class="btn" style="grid-area: r">3</button>
+              <button class="btn" style="grid-area: s">-</button>
+              <button class="btn" style="grid-area: t">=</button>
+              <button class="btn" style="grid-area: u">0</button>
+              <button class="btn" style="grid-area: v">,</button>
+              <button class="btn" style="grid-area: w">%</button>
+              <button class="btn" style="grid-area: x">+</button>
             </div>
-        </main>
-        <footer>FOOTER</footer>
+          </div>
+        </div>
+      </main>
+      <footer>FOOTER</footer>
     </div>
-</body>
+  </body>
 </html>

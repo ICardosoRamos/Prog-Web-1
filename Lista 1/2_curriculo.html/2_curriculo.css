@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+
+    .lateral_esquerda {
+        background-color: rgb(58 64 83);
+        flex: 2;
+        padding: 60px 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .first {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .second {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .lateral_direita {
+        background-color: aliceblue;
+        flex: 4;
+        padding: 60px 25px;
+        color: #000;
+        max-height: 100vh;
+        overflow: auto;
+
+        .intro {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .experiencia {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
